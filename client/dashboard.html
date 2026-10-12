@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard — Talent Engine</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"></head>
+<body><div id="nav"></div>
+<main class="container page">
+  <div class="page-head"><div><span class="eyebrow">Recruiter dashboard</span><h2>Candidate ranking</h2></div></div>
+  <div class="stats" id="stats"></div>
+  <div class="card"><h3>Score distribution</h3><div class="dist" id="dist"></div></div>
+  <div class="filters">
+    <input id="q" type="search" placeholder="Search name or email" aria-label="Search">
+    <select id="position" aria-label="Position"><option value="">All positions</option></select>
+    <select id="category" aria-label="Category"><option value="">All categories</option><option>Priority</option><option>Recommended</option><option>To Review</option><option>Low Match</option></select>
+    <select id="status" aria-label="Status"><option value="">All statuses</option><option>New</option><option>Under Review</option><option>Shortlisted</option><option>Interview</option><option>Rejected</option><option>Hired</option></select>
+    <input id="minExp" type="number" min="0" placeholder="Min. years" aria-label="Minimum experience">
+    <select id="sort" aria-label="Sort by"><option value="score_desc">Highest score</option><option value="score_asc">Lowest score</option><option value="newest">Newest</option><option value="oldest">Oldest</option></select>
+  </div>
+  <div class="filters" style="grid-template-columns:repeat(2,1fr);max-width:340px;margin-top:0"><input id="minScore" type="number" min="0" max="100" placeholder="Min. score" aria-label="Min score"><input id="maxScore" type="number" min="0" max="100" placeholder="Max. score" aria-label="Max score"></div>
+  <div class="card" style="padding:0"><div class="table-wrap"><table class="table"><thead><tr><th>#</th><th>Candidate</th><th>Desired position</th><th>Exp.</th><th>Skills match</th><th>Score</th><th>Category</th><th>Status</th><th>Date</th><th></th></tr></thead><tbody id="rows"></tbody></table></div><div class="state" id="state" hidden></div></div>
+</main>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/auth.js"></script><script src="js/ui.js"></script><script src="js/dashboard.js"></script></body></html>

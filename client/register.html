@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create recruiter account — Talent Engine</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/auth.css"></head>
+<body><main class="auth-wrap"><div class="card auth-card">
+<a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Talent Engine</a>
+<h1>Create recruiter account</h1><p class="muted">Recruiter access is restricted to authorized staff.</p>
+<form id="auth-form" novalidate><div id="msg" role="alert" hidden></div>
+<div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
+<div class="field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required><div class="hint">At least 8 characters.</div></div>
+<div class="field"><label for="accessCode">Access code</label><input id="accessCode" name="accessCode" type="password" autocomplete="off" required><div class="hint">Provided by your administrator. Required to create a recruiter account.</div></div>
+<button class="btn btn-primary" type="submit" id="submit">Create account</button></form>
+<p class="auth-alt">Already registered? <a href="login.html">Sign in</a></p></div></main>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/auth.js"></script></body></html>

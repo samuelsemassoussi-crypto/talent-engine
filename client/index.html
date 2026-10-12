@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Talent Engine — Transform applications into actionable talent insights</title>
+<meta name="description" content="Talent Engine helps recruiters collect, qualify, score and prioritize candidates faster.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Talent Engine</a>
+  <nav class="nav-links" aria-label="Main"><a href="#home">Home</a><a href="#how">How it works</a><a href="#candidates">For candidates</a><a href="#recruiters">For recruiters</a></nav>
+  <div class="nav-actions"><a class="btn btn-outline btn-sm" href="login.html" data-auth-link>Recruiter Login</a><a class="btn btn-primary btn-sm" href="apply.html">Apply</a></div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+  <div>
+    <span class="eyebrow">Transform applications into actionable talent insights</span>
+    <h1>From applications to qualified talent.</h1>
+    <p class="lead">Talent Engine helps recruiters collect, qualify, score and prioritize candidates faster.</p>
+    <div class="hero-cta"><a class="btn btn-accent btn-lg" href="apply.html">Submit your application</a><a class="btn btn-outline btn-lg" href="dashboard.html">Recruiter dashboard</a></div>
+  </div>
+  <div class="card preview" aria-label="Dashboard preview (illustrative)">
+    <div class="preview-top"><div><div class="preview-title">Talent score</div><div class="score-ring"><b>92</b><span>/ 100</span></div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end"><span class="badge badge-priority">Priority</span><span class="badge badge-recommended">Recommended</span></div></div>
+    <div class="preview-body"><div class="preview-title">Candidate ranking</div>
+      <div class="rank-row"><span class="pos">1</span><span>Amina D.<br><small class="muted">Full Stack Developer</small></span><b>92</b><span class="badge badge-priority">Priority</span></div>
+      <div class="rank-row"><span class="pos">2</span><span>Lucas M.<br><small class="muted">Full Stack Developer</small></span><b>84</b><span class="badge badge-priority">Priority</span></div>
+      <div class="rank-row"><span class="pos">3</span><span>Sofia R.<br><small class="muted">Backend Developer</small></span><b>71</b><span class="badge badge-recommended">Recommended</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section section-alt" id="how"><div class="container">
+  <div class="section-head"><span class="eyebrow">How it works</span><h2>From first application to shortlist in four steps.</h2></div>
+  <div class="steps">
+    <div class="card step"><div class="step-num">01 — Apply</div><h3>Apply</h3><p>Candidates submit their information and CV.</p></div>
+    <div class="card step"><div class="step-num">02 — Qualify</div><h3>Qualify</h3><p>The platform analyzes the candidate profile.</p></div>
+    <div class="card step"><div class="step-num">03 — Score</div><h3>Score</h3><p>Each candidate receives a transparent score out of 100.</p></div>
+    <div class="card step"><div class="step-num">04 — Prioritize</div><h3>Prioritize</h3><p>Recruiters quickly identify the profiles requiring attention.</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="recruiters"><div class="container">
+  <div class="section-head"><span class="eyebrow">Why Talent Engine</span><h2>Less sorting. More deciding.</h2></div>
+  <div class="features">
+    <div class="card feature"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div><h3>Structured applications</h3><p>Every candidate provides the same essential information, ready to compare.</p></div>
+    <div class="card feature"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Transparent scoring</h3><p>See exactly why a candidate scores 87 out of 100, criterion by criterion.</p></div>
+    <div class="card feature"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Faster candidate review</h3><p>A ranked list puts the profiles worth your time at the top.</p></div>
+  </div>
+</div></section>
+
+<section class="section section-alt"><div class="container cta-grid">
+  <div class="card" id="candidates"><span class="eyebrow">For candidates</span><h2>Ready to apply?</h2><p>Complete a short form in four steps and upload your CV as a PDF.</p><a class="btn btn-accent" href="apply.html">Submit your application</a></div>
+  <div class="card"><span class="eyebrow">For recruiters</span><h2>Review ranked talent.</h2><p>Open the dashboard to see scores, categories and the reasoning behind each ranking.</p><a class="btn btn-primary" href="dashboard.html">Recruiter dashboard</a></div>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container">Talent Engine — Transform applications into actionable talent insights.</div></footer>
+<script src="js/config.js"></script><script src="js/auth.js"></script>
+</body></html>

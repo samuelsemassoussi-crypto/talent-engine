@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apply — Talent Engine</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/apply.css"></head>
+<body><header class="site-header"><div class="container nav"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Talent Engine</a><div class="nav-actions"><a class="btn btn-outline btn-sm" href="login.html">Recruiter Login</a></div></div></header>
+<main class="container"><div class="apply card" id="box" style="padding:32px">
+  <span class="eyebrow">Application</span><h1>Submit your application</h1>
+  <ol class="stepper"><li data-s="1" class="on">Personal</li><li data-s="2">Profile</li><li data-s="3">CV</li><li data-s="4">Confirm</li></ol>
+  <div id="err" class="alert alert-error" hidden style="margin-bottom:16px"></div>
+  <form id="f" novalidate>
+   <section class="step" data-step="1"><div class="grid2">
+     <div class="field"><label for="firstName">First name</label><input id="firstName" autocomplete="given-name"></div><div class="field"><label for="lastName">Last name</label><input id="lastName" autocomplete="family-name"></div>
+     <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email"></div><div class="field"><label for="phone">Phone</label><input id="phone" type="tel"></div>
+     <div class="field"><label for="country">Country</label><input id="country"></div><div class="field"><label for="city">City</label><input id="city"></div></div></section>
+   <section class="step" data-step="2" hidden>
+     <div class="grid2"><div class="field"><label for="desiredPosition">Desired position</label><select id="desiredPosition"><option value="">Select…</option><option>Full Stack Developer</option><option>Frontend Developer</option><option>Backend Developer</option><option>Data Analyst</option></select></div>
+     <div class="field"><label for="experienceYears">Years of experience</label><input id="experienceYears" type="number" min="0" max="60"></div>
+     <div class="field"><label for="education">Education level</label><select id="education"><option value="">Select…</option><option value="phd">PhD</option><option value="master">Master's</option><option value="bachelor">Bachelor's</option><option value="highschool">High school</option><option value="other">Other</option></select></div>
+     <div class="field"><label for="field">Professional field</label><input id="field"></div></div>
+     <div class="field"><label for="skills">Skills (comma-separated)</label><input id="skills" placeholder="React, Node.js, MongoDB"><div class="muted" id="hint" style="font-size:.78rem;margin-top:4px"></div></div>
+     <div class="field"><label>Languages</label><div id="langs"></div><button type="button" class="btn btn-outline btn-sm" id="addLang">Add language</button></div>
+     <div class="field"><label for="availability">Availability</label><select id="availability"><option value="">Select…</option><option value="immediate">Immediately</option><option value="1_month">Within 1 month</option><option value="3_months">Within 3 months</option><option value="later">More than 3 months</option></select></div></section>
+   <section class="step" data-step="3" hidden><label for="cv">CV (PDF, max 5 MB)</label><input id="cv" type="file" accept="application/pdf"><div id="fileBox" class="file-box" hidden><span id="fileInfo"></span><button type="button" class="btn btn-outline btn-sm" id="rm">Remove</button></div></section>
+   <section class="step" data-step="4" hidden><h3 style="margin-bottom:14px">Review your application</h3><dl class="summary" id="sum"></dl></section>
+   <div class="actions"><button type="button" class="btn btn-outline" id="back" hidden>Back</button><span></span><button type="button" class="btn btn-primary" id="next">Continue</button><button type="submit" class="btn btn-accent" id="submit" hidden>Submit application</button></div>
+  </form></div></main>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/ui.js"></script><script src="js/apply.js"></script></body></html>
